@@ -29,6 +29,7 @@ class GUI(QWidget):
         self._tray.setContextMenu(traymenu)
         self._tray.show()
         self._tray.activated.connect(self.Tray_click)
+        self._tray.setToolTip("Pomodori: "+str(self._pom._pomodori))
 
         setTimerTray = QLineEdit()
         setTimerTray.setPlaceholderText("Set timer")
