@@ -24,7 +24,7 @@ class GUI(QWidget):
         self._tray.setIcon(QIcon("greentomato.png"))
 
     def initTray(self):
-        self._tray = QSystemTrayIcon(QIcon("redtomato.png"))
+        self._tray = QSystemTrayIcon(QIcon("greentomato.png"))
         traymenu = QMenu("Menu")
         self._tray.setContextMenu(traymenu)
         self._tray.show()
